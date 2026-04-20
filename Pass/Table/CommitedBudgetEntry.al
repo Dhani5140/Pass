@@ -115,5 +115,5 @@ table 50004 "Committed Budget Entry"
     }
     var
         GLSetup: Record "General Ledger Setup";
-        GrantSetup: Record "Grant Setup";
+    //GrantSetup: Record "Grant Setup";
 }

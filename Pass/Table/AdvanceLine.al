@@ -106,16 +106,18 @@ table 50001 "Advance Line"
         field(34; "Office Location Code"; Code[20])
         {
         }
-        field(35; "Source Type"; Option " ", Customer, Vendor, "Bank Account", "Fixed Asset", "IC Partner", Employee)
-    {
-      Caption = 'Source Type';
+        field(35; "Source Type"; Option)
+        {
+            OptionMembers = " ",Customer,Vendor,"Bank Account","Fixed Asset","IC Partner",Employee;
+            Caption = 'Source Type';
         }
         field(36; "Source No."; Code[20])
         {
         }
-        field(37; "Applies-to Doc. Type"; Option " ", Payment, Invoice, "Credit Memo", "Finance Charge Memo", Reminder, Refund)
-    {
-      Caption = 'Applies-to Doc. Type';
+        field(37; "Applies-to Doc. Type"; Option)
+        {
+            OptionMembers = " ",Payment,Invoice,"Credit Memo","Finance Charge Memo",Reminder,Refund;
+            Caption = 'Applies-to Doc. Type';
         }
         field(38; "Applies-to Doc. No."; Code[20])
         {
@@ -131,9 +133,10 @@ table 50001 "Advance Line"
         field(41; "FTR Amount"; Decimal)
         {
         }
-        field(42; "Travel Type"; Option " ", "Return Trip", "One Way")
-    {
-    }
+        field(42; "Travel Type"; Option)
+        {
+            OptionMembers = " ","Return Trip","One Way";
+        }
         field(43; "Return Time"; Time)
         {
             Caption = 'Expected Return Time';
@@ -148,21 +151,24 @@ table 50001 "Advance Line"
         field(46; "Date of Birth"; Date)
         {
         }
-        field(47; Gender; Option " ", Male, Female)
-    {
-    }
+        field(47; Gender; Option)
+        {
+            OptionMembers = " ",Male,Female;
+        }
         field(48; "Ticket Entry"; Boolean)
         {
         }
         field(49; "Receipt Date"; Date)
         {
         }
-        field(50; "Voucher Type"; Option " ", "Petty Cash Payment", "Bank Payment", Receipt)
-    {
-    }
-        field(52; "WHT Transaction Type"; Option " ", Purchase, Sale)
-    {
-    }
+        field(50; "Voucher Type"; Option)
+        {
+            OptionMembers = " ","Petty Cash Payment","Bank Payment",Receipt;
+        }
+        field(52; "WHT Transaction Type"; Option)
+        {
+            OptionMembers = " ",Purchase,Sale;
+        }
         field(53; Quantity; Decimal)
         {
             Caption = 'Quantity 1';
@@ -414,16 +420,16 @@ table 50001 "Advance Line"
         }
     }
     var
-        //Text001: Label;
-        //Text002: Label;
-        GLSetup: Record "General Ledger Setup";
-        CurrencyCode: Code[10];
-        Currency: Record Currency;
-        CurrExchRate: Record "Currency Exchange Rate";
-        AdvanceHeader: Record "Advance Header";
-        GLAcc: Record "G/L Account";
-        AdvanceLineBuff: Record "Advance Line" temporary;
-        BudgetMgt: Codeunit BudgetManagement;
-        DimGroup: Record "Dimension Group";
-        GrantSetup: Record "Grant Setup";
+    //Text001: Label;
+    //Text002: Label;
+    //GLSetup: Record "General Ledger Setup";
+    //CurrencyCode: Code[10];
+    //Currency: Record Currency;
+    //CurrExchRate: Record "Currency Exchange Rate";
+    //AdvanceHeader: Record "Advance Header";
+    //GLAcc: Record "G/L Account";
+    //AdvanceLineBuff: Record "Advance Line" temporary;
+    //BudgetMgt: Codeunit BudgetManagement;
+    //DimGroup: Record "Dimension Group";
+    //GrantSetup: Record "Grant Setup";
 }
