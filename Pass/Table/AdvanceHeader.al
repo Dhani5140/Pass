@@ -439,14 +439,14 @@ table 50000 "Advance Header"
         }
     }
     var
-    //BudgetMgt: Codeunit BudgetManagement;
-    //GLSetup: Record "General Ledger Setup";
-    //NoSeriesMgt: Codeunit Microsoft.Foundation.NoSeries."No. Series";
-    //Employee: Record Employee;
-    //AdvanceLine: Record "Advance Line";
-    //DimValue: Record "Dimension Value";
-    //Text001: Label '';
-    //GenJnlLine: Record "Gen. Journal Line";
-    //BankDocEntry: Record "Bank Document Entry";
-    //GrantSetup: Record "Grant Setup";
+        BudgetMgt: Codeunit BudgetManagement;
+        GLSetup: Record "General Ledger Setup";
+        NoSeriesMgt: Codeunit Microsoft.Foundation.NoSeries."No. Series";
+        Employee: Record Employee;
+        AdvanceLine: Record "Advance Line";
+        DimValue: Record "Dimension Value";
+        Text001: Label;
+        GenJnlLine: Record "Gen. Journal Line";
+        BankDocEntry: Record "Bank Document Entry";
+        GrantSetup: Record "Grant Setup";
 }

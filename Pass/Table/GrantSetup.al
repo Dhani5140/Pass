@@ -1,4 +1,4 @@
-table 50010 "Grant Setup"
+table 50710 "Grant Setup"
 {
     Caption = 'Grant Setup';
 
